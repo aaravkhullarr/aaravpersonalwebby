@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    // GitHub Pages serves this page for any missing URL, at any depth
+    // (e.g. /aaravpersonalwebby/a/b/c). A <base> pointing at the site's root
+    // folder makes the relative paths below resolve correctly from anywhere.
+    // If the repo/folder name ever changes, update SITE_ROOT.
+    (function () {
+      var SITE_ROOT = "/aaravpersonalwebby/";
+      var root = location.pathname.indexOf(SITE_ROOT) === 0 ? SITE_ROOT : "/";
+      document.write('<base href="' + root + '">');
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Not found | Aarav Khullar</title>
   <meta name="description" content="This page doesn't exist.">
@@ -14,11 +25,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Not found | Aarav Khullar">
   <meta name="twitter:description" content="This page doesn't exist.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@300..700&display=swap">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-page="404">
   <div class="shell">
@@ -26,7 +37,7 @@
       <noscript><div class="slab"><h1 class="name">aarav khullar</h1><p>this site needs javascript to display its content. find me on <a class="inline-link" href="https://www.linkedin.com/in/aaravkhullar/">linkedin</a>.</p></div></noscript>
     </main>
   </div>
-  <script src="/content.js"></script>
-  <script src="/assets/site.js"></script>
+  <script src="content.js"></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
