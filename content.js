@@ -9,7 +9,7 @@
  *  • Inline links: write [link text](https://example.com) inside any
  *    intro paragraph, summary, bullet or note.
  *  • Remove a whole section by making its list empty: e.g. honors: []
- *  • Images: put files in /images and reference them as "images/name.jpg".
+ *  • Images: put files next to this one (top level) and reference them as "name.jpg".
  *
  *  Source: linkedin.com/in/aaravkhullar (read Nov 2026).
  */
@@ -52,19 +52,19 @@ window.SITE = {
   //   caption = optional short line shown on hover and in the enlarged view
   //   w, h    = the image's pixel size, so the grid doesn't jump while loading
   photos: [
-    { src: "images/podium.webp", w: 796, h: 624, caption: null,
+    { src: "podium.webp", w: 796, h: 624, caption: null,
       alt: "Aarav in a suit and blue tie speaking at a podium on a stage with a pink and purple backdrop." },
-    { src: "images/golf-sunset.jpg", w: 505, h: 802, caption: null,
+    { src: "golf-sunset.jpg", w: 505, h: 802, caption: null,
       alt: "Aarav mid-swing at a golf driving range under a pink sunset sky with a crescent moon." },
-    { src: "images/graduation.webp", w: 1763, h: 876, caption: "graduation, naperville north",
+    { src: "graduation.webp", w: 1763, h: 876, caption: "graduation, naperville north",
       alt: "Aarav with friends in navy and orange graduation gowns, holding diplomas in front of the Naperville North stands." },
-    { src: "images/thrift.jpg", w: 454, h: 732, caption: null,
+    { src: "thrift.jpg", w: 454, h: 732, caption: null,
       alt: "Aarav in a navy jacket and light jeans holding a leather bag inside a vintage clothing store." },
-    { src: "images/deca-officers.jpg", w: 719, h: 389, caption: "with the illinois deca officer team",
+    { src: "deca-officers.jpg", w: 719, h: 389, caption: "with the illinois deca officer team",
       alt: "Aarav with four other DECA officers in blazers and blue ties in front of a conference stage." },
-    { src: "images/mirror.webp", w: 608, h: 786, caption: null,
+    { src: "mirror.webp", w: 608, h: 786, caption: null,
       alt: "Aarav and a friend taking a selfie in a round street mirror on a city corner at night." },
-    { src: "images/joker.jpg", w: 436, h: 342, caption: null,
+    { src: "joker.jpg", w: 436, h: 342, caption: null,
       alt: "Aarav and a friend in Joker face paint, giving a thumbs-up at night." },
   ],
 
@@ -229,7 +229,7 @@ window.SITE = {
       tagline: "Illinois's largest youth entrepreneurship incubator",
       role: "co-founder",
       dates: "apr 2024 - present",
-      image: null, // e.g. "images/bizbuzz.jpg"
+      image: null, // e.g. "bizbuzz.jpg"
       details: [
         "taught 1,572 K–8 students through summer camps and the “Fish Tank” competition.",
         "incubated 143 businesses, led 64 staff, raised $15.4k, and partnered with 48 organizations.",
